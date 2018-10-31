@@ -21,7 +21,7 @@ $("#userChoice").click(function(){});
     
     
 $("shoot").click(function(){
-    
+
      if(user && CPU === rock || paper || scissor){ 
         console.log("Draw")        
       } else if ( user === rock && CPU === paper ){
@@ -35,13 +35,13 @@ $("shoot").click(function(){
         console.log(Loser)
     }
      else if ( user === rock  && CPU === scissor ){
-        console.log(Loser)
+        console.log(winner)
     }
-     else if ( user === rock || paper ||scissor && CPU === paper ){
-        console.log(Loser)
+     else if ( user === paper  && CPU === rock ){
+        console.log(winner)
     }
-     else if ( user === rock || paper ||scissor && CPU === paper ){
-        console.log(Loser)
+     else if ( user === scissor && CPU === paper ){
+        console.log(winner)
     }
        else if(){
            
