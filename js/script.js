@@ -32,23 +32,23 @@ $("#shoot").click(function(){
      user  === scissor && CPU === rock1){ 
         $("#result").text("Draw")        
       } else if ( user === rock && CPU === paper1 ){
-        $("#result").append("Loser").val()
+        $("#result").append("Loser")
     }
     
      else if ( user === paper && CPU === scissor1 ){
-        $("#result").html ("Loser").val()
+        $("#result").html("Loser")
     }
      else if ( user === scissor && CPU === rock1 ){
-        $("#result").html("Loser").val()
+        $("#result").html("Loser")
     }
      else if ( user === rock  && CPU === scissor1 ){
-         $("#result").html("winner").val()
+         $("#result").html("winner")
     }
      else if ( user === paper  && CPU === rock1 ){
-         $("#result").html("winner").val()
+         $("#result").html("winner")
     }
      else if ( user === scissor && CPU === paper1 ){
-        $("#result").html("winner").val()
+        $("#result").html("winner")
     }
     });
     
