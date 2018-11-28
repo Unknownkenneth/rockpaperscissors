@@ -15,36 +15,43 @@ var CPU= cpu
 var paper ="paper"
 var rock ="rock"
 var scissor ="scissor" 
+var paper1 = 0
+var rock1 =1
+var scissor1 =2 
 
 $("#shoot").click(function(){
      $("#userChoice").text($("#input").val());
+     $("#computerChoice").text(cpu).val()
  
  
-});
+//});
     
 
 
-     if(user && CPU === rock || paper || scissor){ 
-        console.log("Draw")        
-      } else if ( user === rock && CPU === paper ){
-        $("#result").text(console.log("Loser"))
+    if(user === rock && CPU === rock1 || user === paper && CPU === paper1  ||
+     user  === scissor && CPU === rock1){ 
+        $("#result").text("Draw")        
+      } else if ( user === rock && CPU === paper1 ){
+        $("#result").append("Loser").val()
     }
     
-     else if ( user === paper ||scissor && CPU === scissor );{
-        $("#result").text(console.log("Loser"))
+     else if ( user === paper && CPU === scissor1 ){
+        $("#result").html ("Loser").val()
     }
-     else if ( user === scissor && CPU === rock );{
-        $("#result").text(console.log("Loser"))
+     else if ( user === scissor && CPU === rock1 ){
+        $("#result").html("Loser").val()
     }
-     else if ( user === rock  && CPU === scissor );{
-         $("#result").text(console.log("winner"))
+     else if ( user === rock  && CPU === scissor1 ){
+         $("#result").html("winner").val()
     }
-     else if ( user === paper  && CPU === rock );{
-         $("#result").text(console.log("winner"))
+     else if ( user === paper  && CPU === rock1 ){
+         $("#result").html("winner").val()
     }
-     else if ( user === scissor && CPU === paper );{
-        $("#result").text(console.log("winner"))
+     else if ( user === scissor && CPU === paper1 ){
+        $("#result").html("winner").val()
     }
+    });
+    
      /*  else if(){
            
            
